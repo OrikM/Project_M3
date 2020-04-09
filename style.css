@@ -1,0 +1,146 @@
+
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 336px;
+  margin: 20% auto;
+  flex-direction: column;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.yellow-header {
+  background-color: #ffdc40;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 28px;
+  color: #000000;
+}
+
+/* sort buttons*/
+
+.s-button-down {
+  background-image: url('./images/gray_sort_down.png');
+  background-repeat: no-repeat;
+  background-size: 25px 15px;
+  width:25;
+  background-position: right;
+  height: 30px;
+  margin:  0 40px 0 0;
+  padding: 0;
+}
+
+.s-button-down:hover {
+  background-image: url('./images/black_sort_down.png');
+  background-repeat: no-repeat;
+  z-index: 999;
+  cursor: pointer;
+  
+}
+
+.s-button-up {
+  background-image: url('./images/gray_sort_up.png');
+  background-repeat: no-repeat;
+  background-size: 25px 15px;
+  width:25;
+  background-position: right;
+  height: 30px;
+  margin:  0 40px 0 0;
+  padding: 0;
+}
+
+.s-button-up:hover {
+  background-image: url('./images/black_sort_up.png');
+  background-repeat: no-repeat;
+  z-index: 999;
+  cursor: pointer;
+  
+}
+
+/*drag and drop*/
+
+li {
+  padding: 0;
+  border-radius: 10px;
+  list-style: none;
+  width: 90%;
+
+}
+
+.list-hover:hover {
+  background-color: #FFDC40;
+  cursor: grab;
+}
+
+.list-hover:hover .input {
+  background-color:#FFDC40;
+}
+
+.drag-img {
+  margin-left: 8px;
+  cursor: grab;
+  color: #C4C4C4;
+  font-weight: 900;
+  font-size: 150%;
+}
+
+
+
+/*text side*/
+input {
+  border: none;
+  width: 75%;
+}
+
+.main-text-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -5% 10% 5% auto;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+
+}
+
+.gray-delete {
+  background-image: url('./images/gray_x.png');
+  background-size: cover;
+  width: 12%;
+  background-position: center;
+  height: 30px;
+}
+
+.gray-delete:hover {
+  background-image: url('./images/purple_x.png');
+  cursor: pointer;
+}
+
+/*Submit button*/
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin: 4% auto;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
